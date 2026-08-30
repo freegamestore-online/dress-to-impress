@@ -41,9 +41,9 @@ export default defineConfig({
       // field passes through to the emitted manifest.webmanifest; browsers
       // ignore unknown members.
       manifest: {
-        name: "APPNAME",
-        short_name: "APPNAME",
-        description: "APPNAME — free forever",
+        name: "Dress to Impress",
+        short_name: "Dress to Impress",
+        description: "Dress to Impress — free forever",
         start_url: "/",
         display: "standalone",
         background_color: "#0f0f0f",
