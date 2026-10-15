@@ -3,7 +3,7 @@ import { GameShell, GameTopbar, GameAuth } from "@freegamestore/games";
 import {
   TOPS, BOTTOMS, SHOES, ACCESSORIES, PALETTES,
   OutfitSelection, scoreOutfit, pickThemes, TOTAL_ROUNDS,
-  Theme, ColorPalette,
+  Theme,
 } from "./lib/gameData";
 import { useHighScore } from "./hooks/useHighScore";
 import { RoundResult } from "./types";
@@ -35,7 +35,7 @@ function IntroScreen({ onStart, highScore }: { onStart: () => void; highScore: n
       <div className="text-6xl">👗</div>
       <div>
         <h1 className="text-3xl font-black mb-2" style={{ fontFamily: "Fraunces, serif", color: "var(--ink)" }}>
-          Dress to Impress
+          Style Runway
         </h1>
         <p className="text-sm leading-relaxed" style={{ color: "var(--muted)", maxWidth: 320 }}>
           Style 5 outfits across different theme prompts. Mix and match tops, bottoms, shoes, and accessories — then score points for how well your look fits the vibe!
@@ -304,7 +304,7 @@ export default function App() {
   const lastResult = results[results.length - 1] ?? null;
 
   return (
-    <GameShell topbar={<GameTopbar title="Dress to Impress" score={totalScore} />}>
+    <GameShell topbar={<GameTopbar title="Style Runway" score={totalScore} />}>
       <div className="h-full overflow-hidden" style={{ background: "var(--paper)" }}>
         {phase === "intro" && (
           <IntroScreen onStart={handleStart} highScore={highScore} />
